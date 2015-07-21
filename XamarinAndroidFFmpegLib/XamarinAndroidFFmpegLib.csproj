@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{419C5E80-2A5B-49B7-A1FF-B546A4C24273}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XamarinAndroidFFmpegLib</RootNamespace>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>XamarinAndroidFFmpegLib</AssemblyName>
+    <TargetFrameworkVersion>v4.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="FFmpeg\AudioDecoderStream.cs" />
+    <Compile Include="FFmpeg\AudioEncoderStream.cs" />
+    <Compile Include="FFmpeg\DecoderException.cs" />
+    <Compile Include="FFmpeg\DecoderStream.cs" />
+    <Compile Include="FFmpeg\FifoMemoryStream.cs" />
+    <Compile Include="FFmpeg\IAudioStream.cs" />
+    <Compile Include="FFmpeg\IMediaStream.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\AVBitStreamFilter.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\AVBitStreamFilterContext.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\AVCodec.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\AVCodecContext.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\AVCodecParser.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\AVCodecParserContext.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\AVFrame.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\AVPaletteControl.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\AVPanScan.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\AVPicture.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\AVProfile.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\AVResampleContext.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\AVSubtitle.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\AVSubtitleRect.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\Enums.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\ImgReSampleContext.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\PictureType.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\RcOverride.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec\ReSampleContext.cs" />
+    <Compile Include="FFmpeg\Interop\AVCodec.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\AVChapter.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\AVCodecTag.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\AVError.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\AVFormatContext.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\AVFrac.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\AVImageFormat.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\AVImageInfo.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\AVIndexEntry.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\AVInputFormat.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\AVOutputFormat.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\AVPacket.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\AVPacketList.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\AVProbeData.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\AVProgram.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\AVStream.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat\Enums.cs" />
+    <Compile Include="FFmpeg\Interop\AVFormat.cs" />
+    <Compile Include="FFmpeg\Interop\AVIO\AVIOContext.cs" />
+    <Compile Include="FFmpeg\Interop\AVIO\URLContext.cs" />
+    <Compile Include="FFmpeg\Interop\AVIO\URLPoolEntry.cs" />
+    <Compile Include="FFmpeg\Interop\AVIO\URLProtocol.cs" />
+    <Compile Include="FFmpeg\Interop\AVIO.cs" />
+    <Compile Include="FFmpeg\Interop\AVStreamArray20.cs" />
+    <Compile Include="FFmpeg\Interop\AVUtil\AVClass.cs" />
+    <Compile Include="FFmpeg\Interop\AVUtil\AVDictionary.cs" />
+    <Compile Include="FFmpeg\Interop\AVUtil\AVOption.cs" />
+    <Compile Include="FFmpeg\Interop\AVUtil\AVOptionType.cs" />
+    <Compile Include="FFmpeg\Interop\AVUtil\AVRational.cs" />
+    <Compile Include="FFmpeg\Interop\AVUtil\AVRounding.cs" />
+    <Compile Include="FFmpeg\Interop\AVUtil\Enums.cs" />
+    <Compile Include="FFmpeg\Interop\AVUtil\PixelFormat.cs" />
+    <Compile Include="FFmpeg\Interop\AVUtil.cs" />
+    <Compile Include="FFmpeg\Interop\BrokenAttribute.cs" />
+    <Compile Include="FFmpeg\Interop\BrokenPointer.cs" />
+    <Compile Include="FFmpeg\Interop\IntFloat_ReadWrite.cs" />
+    <Compile Include="FFmpeg\Interop\IntPtrArray4.cs" />
+    <Compile Include="FFmpeg\Interop\Log.cs" />
+    <Compile Include="FFmpeg\Interop\Mathematics.cs" />
+    <Compile Include="FFmpeg\Interop\Mem.cs" />
+    <Compile Include="FFmpeg\Interop\Opt.cs" />
+    <Compile Include="FFmpeg\Interop\Rational.cs" />
+    <Compile Include="FFmpeg\Interop\SWScale\Enums.cs" />
+    <Compile Include="FFmpeg\Interop\SWScale\SwsContext.cs" />
+    <Compile Include="FFmpeg\Interop\SWScale\SwsFilter.cs" />
+    <Compile Include="FFmpeg\Interop\SWScale\SwsVector.cs" />
+    <Compile Include="FFmpeg\Interop\SWScale.cs" />
+    <Compile Include="FFmpeg\Interop\Utils.cs" />
+    <Compile Include="FFmpeg\Interop\ZeroTrueBoolMarshaller.cs" />
+    <Compile Include="FFmpeg\IVideoStream.cs" />
+    <Compile Include="FFmpeg\MediaFile.cs" />
+    <Compile Include="FFmpeg\VideoDecoderStream.cs" />
+    <Compile Include="FFmpeg\VideoScalingStream.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="FFmpeg\Interop\Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="lib\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedNativeLibrary Include="lib\armeabi\libavcodec.so" />
+    <EmbeddedNativeLibrary Include="lib\armeabi\libavcore.so" />
+    <EmbeddedNativeLibrary Include="lib\armeabi\libffmpeg.so" />
+    <EmbeddedNativeLibrary Include="lib\armeabi-v7a\libavcodec.so" />
+    <EmbeddedNativeLibrary Include="lib\armeabi-v7a\libavcore.so" />
+    <EmbeddedNativeLibrary Include="lib\armeabi-v7a\libffmpeg.so" />
+  </ItemGroup>
+</Project>

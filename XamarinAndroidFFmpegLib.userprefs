@@ -1,0 +1,25 @@
+﻿<Properties StartupItem="ffmpeg\XamarinAndroidFFmpegLibTest.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.YT910HX7SE" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinAndroidFFmpegLib\FFmpeg\AudioEncoderStream.cs">
+    <Files>
+      <File FileName="ffmpeg\MainActivity.cs" Line="156" Column="16" />
+      <File FileName="XamarinAndroidFFmpegLib\FFmpeg\Interop\AVIO.cs" Line="267" Column="39" />
+      <File FileName="c:\Users\leon.pelletier.APCURIUM\Documents\Projects\TOBE Xamarin Android FFmpeg Lib Binding\XamarinAndroidFFmpegLib\FFmpeg\FifoMemoryStream.cs" Line="76" Column="34" />
+      <File FileName="XamarinAndroidFFmpegLib\FFmpeg\Interop\AVCodec\AVCodecContext.cs" Line="1280" Column="25" />
+      <File FileName="XamarinAndroidFFmpegLib\FFmpeg\AudioEncoderStream.cs" Line="192" Column="22" />
+      <File FileName="XamarinAndroidFFmpegLib\FFmpeg\AudioDecoderStream.cs" Line="35" Column="2" />
+      <File FileName="XamarinAndroidFFmpegLib\FFmpeg\DecoderStream.cs" Line="169" Column="9" />
+      <File FileName="XamarinAndroidFFmpegLib\FFmpeg\VideoScalingStream.cs" Line="103" Column="21" />
+      <File FileName="XamarinAndroidFFmpegLib\FFmpeg\Interop\AVIO\URLContext.cs" Line="43" Column="23" />
+      <File FileName="XamarinAndroidFFmpegLib\FFmpeg\Interop\AVIO\URLProtocol.cs" Line="39" Column="23" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>XamarinAndroidFFmpegLibs\XamarinAndroidFFmpegLibs.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.XamarinAndroidFFmpegLibTest AndroidDesignerPreferredDevice="Nexus 4" AndroidDeviceId-Debug="YT910HX7SE" />
+</Properties>
